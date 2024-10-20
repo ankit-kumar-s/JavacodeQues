@@ -23,19 +23,19 @@ public class findduplicateinarray {
 			
 		}
 
-	//	dupset();
+		//dupset();
 
 	}
 	
 	
 	  public static void dupset() {
 	  
-	  int[] arr = { 1, 3, 4, 2, 5, 7, 2, 4 ,1};
+	  int[] arr = { 1, 3, 4, 2, 5, 7, 2, 4 ,1,5,2};
 	  
-	  Map<Integer , Integer> mapd = new HashMap<>();
+	  Map<Integer , Integer> mapd = new HashMap<Integer,Integer>();
 	  for(int i : arr) {
 		  if(mapd.containsKey(i)) {
-			  mapd.put(i, 1+1);		 
+			  mapd.put(i, mapd.get(i)+1);		 
 		  }
 		  else {
 			  mapd.put(i, 1);
@@ -47,7 +47,7 @@ public class findduplicateinarray {
 //			  System.out.println("Duplicate value are :" + x);
 //		  }
 //	  }
-	  
+	   System.out.println(mapd);
 	  for( Map.Entry  ent :mapd.entrySet()) {
 		  System.out.println(ent.getKey() + " " + ent.getValue());
 	  }

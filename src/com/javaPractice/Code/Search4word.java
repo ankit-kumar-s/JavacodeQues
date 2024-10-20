@@ -4,8 +4,8 @@ package com.javaPractice.Code;
 public class Search4word {
 
 	public static void main(String[] args) {
-		String shar = "Hello,how are  you!!";
-		char cf = ',';
+		String shar = "Hello,howh are,  you!!";
+		char cf = 'h';
 		schar(shar, cf);
 		//wordstring();
 	}

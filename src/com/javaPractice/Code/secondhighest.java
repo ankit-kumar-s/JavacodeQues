@@ -15,13 +15,10 @@ public class secondhighest {
 				s=l;
 				l = a[i];
 			}else if(a[i]>s){
-				t=s;
 				s=a[i];
-			}else if(a[i]>t) {
-				t=a[i];
 			}
 		}
-		System.out.println(t);
+		System.out.println(s);
 		
 	}
 

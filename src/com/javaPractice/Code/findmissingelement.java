@@ -1,24 +1,26 @@
 package com.javaPractice.Code;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class findmissingelement {
 
 	public static void main(String[] args) {
 		
 		
-		int[] a = {10,11,13,12,14,16};
-		int sum = 0;
-		for(int i=0;i<=a.length-1;i++) {
-			
-			sum=sum+a[i];
-			
-		}
-		int sum1=0;
-		
-		for(int i=10;i<=16;i++) {
-			sum1=sum1+i;
+		int[] a = {10,11,13,12,14,16,15,20};
+
+		Set<Integer> ss = new HashSet<Integer>();
+		for(int s : a) {
+			ss.add(s);
 		}
 		
-		System.out.println("Missig number is :" + (sum1 - sum));
+		for(int i=10;i<20;i++) {
+			if(!ss.contains(i)) {
+				System.out.println(i);
+			}
+		}
+		
 
 	}
 

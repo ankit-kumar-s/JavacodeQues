@@ -102,8 +102,7 @@ public class pattern1 {
 	}
 
 	public static void main(String[] args) {
-		patt4(5);
-
+		patt6(5);
 	}
 
 }

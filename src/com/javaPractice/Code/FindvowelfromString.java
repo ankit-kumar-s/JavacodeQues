@@ -27,7 +27,7 @@ public class FindvowelfromString {
 
 	public static void main(String[] args) {
 		findvowel();
-		//removevowels();
+		removevowels();
 	}
 
 }

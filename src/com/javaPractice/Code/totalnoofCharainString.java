@@ -12,6 +12,12 @@ public class totalnoofCharainString {
 			count++;
 		}
 		System.out.println("The number of character  in the given string is " + count);
+		
+		//print only string 
+		String [] spli = ss.split(" ");
+		for(String s1 : spli) {
+			System.out.println(s1 + " ");
+		}
 	}
 
 }

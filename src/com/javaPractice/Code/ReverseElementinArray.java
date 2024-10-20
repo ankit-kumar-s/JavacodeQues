@@ -8,7 +8,7 @@ public class ReverseElementinArray {
 		int len = arr.length;
 		for(int i=len-1;i>=0;i--) {
 			
-			System.out.println(arr[i] +" ");
+			System.out.print(arr[i] +" ");
 			
 		}
 		

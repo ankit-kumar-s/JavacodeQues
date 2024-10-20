@@ -1,14 +1,14 @@
 package com.javaPractice.Code;
 
-public class countNumberofDigits {
+class countNumberofDigits {
 	
 	
 	public static void numberdigit() {
 		
-		int number = 5567887;
+		int number = 55678879;
 		int count=0;
 		while(number!=0) {
-			number = number/10;
+			number /=10;
 			count++;
 		}
 		System.out.println(count);
@@ -20,8 +20,8 @@ public class countNumberofDigits {
 		int number = 56457;
 		int sum=0;
 		while(number!=0) {
-			sum=sum+number%10;
-			number = number/10;
+			sum+=number%10;
+			number/=10;
 			
 		}
 		System.out.println(sum);
@@ -33,7 +33,7 @@ public class countNumberofDigits {
 
 	public static void main(String[] args) {
 		numberdigit() ;
-		//sumofdigit();
+		sumofdigit();
 	}
 
 }

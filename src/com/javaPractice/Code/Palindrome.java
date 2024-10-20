@@ -11,7 +11,7 @@ public class Palindrome {
 		while (num != 0) {
 
 			rev = rev * 10 + num % 10;
-			num = num / 10;
+			num /= 10;
 		}
 
 		if (dupl == rev) {
@@ -43,7 +43,7 @@ public class Palindrome {
 	public static void main(String[] args) {
 
 		//intnum(717);
-		strings("mom");
+		strings("madam");
 	}
 
 }

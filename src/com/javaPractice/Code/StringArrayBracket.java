@@ -4,7 +4,7 @@ public class StringArrayBracket {
 
 	public static void main(String[] args) {
 		
-		String brac[] = {"(",")","(","(",")"};
+		String brac[] = {"(",")","(","(",")",")"};
 		 int len=brac.length;
 		 int open=0;
 		 int close=0;
