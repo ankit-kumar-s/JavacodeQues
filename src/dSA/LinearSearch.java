@@ -11,7 +11,7 @@ public class LinearSearch {
 		// occuraane , pass false
 		// linearSearchlastoccurance(arr,2,true); // if user want to find last occurance
 		// , pass true
-		// linearSearchMultiple(arr,3);
+		linearSearchMultiple(arr,3);
 
 		// findMax(arr);
 
@@ -24,7 +24,7 @@ public class LinearSearch {
 		//linearSearchMultipleOcurance(arr2d,2);
 		
 		//findMaximumSumSubArray(arr2d);
-		findMinimunSumSubArray(arr2d);
+		//findMinimunSumSubArray(arr2d);
 	}
 
 	public static void linearSearch(int arr[], int target) {
