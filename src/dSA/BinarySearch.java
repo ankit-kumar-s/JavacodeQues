@@ -31,32 +31,88 @@ public class BinarySearch {
 		 * + (last - first + 1)); }
 		 */
 		
-		int []floor = {2,3,4,4,5,7,9,22};
+		int []floor = {2,3,4,4,5,7,9,23,25};
+		float [] f = {6.2f,6.3f,6.7f,7.0f};
 	//	int floordata =bsfloor(floor,1);
-		int floordata = bsceiling(floor,23);
-		if(floordata==-1) {
-			System.out.println("Target not found in array");
-		}
-		else {
-		System.out.println(floordata);
+	//loat floordata = bsceiling(f, 6.4f);
+	/*
+	 * //f(floordata==-1) { System.out.println("Target not found in array"); } else
+	 * { System.out.println(floordata); }
+	 */
+		
+		char[] ch = {'x','f','g','i'};
+		char find = binayrCharCeil(ch,'c');
+	//	System.out.println(find);
+		
+		int [] arrdesc= {100,99,98,86,80,70,1};
+		int resdesc=binarySeachfloordesc(arrdesc,85);
+		System.out.println(resdesc);
+		
 		}
 
+
+
+	
+	public static int binarySeachfloordesc(int [] arr,int target) {
+		
+		int start= 0;
+		int end = arr.length - 1;
+        int ans=0;
+        while (start <= end) {
+        	int mid=start+(end-start)/2;
+        	if(arr[mid]==target) {
+        		ans=arr[mid];
+        		break;
+        	}else if(target > arr[mid]) {
+        		end =mid-1;
+        		ans=arr[mid];
+        	}
+        	else {
+        		start = mid +1;
+        	}
+        }
+        return ans;
+		
 	}
-	public  static  int bsceiling(int []arr,int target) {
+	
+	
+	 
+	
+	
+	//find smallest character that is greater than taret 
+ 		public static char binayrCharCeil(char[] arr, char target) {
+		int start =0 ;
+		int end = arr.length - 1;
+		char ans = '$';
+		while(start<=end) {
+			int mid =start +(end-start)/2;
+			if(arr[mid]<=target) {
+				start = mid+ 1;
+			}else {
+				end=mid -1;
+				ans=arr[mid];
+			}
+		}
+		return (ans=='$')?arr[0]:ans;
+		
+	}
+		
+		
+	public  static  float bsceiling(float []arr,float target) {
 		int start =0;
 		int end = arr.length - 1;
-		int ans = -1;
+		float ans = -1;
 		while(start<=end) {
 			int mid= start +(end-start)/2;
 			if(arr[mid]==target) {
-				ans=arr[mid];
+				ans= arr[mid];
 				break;
 			}else if(arr[mid]<target) {
 				start=mid+1;
 				
 			}else {
 				end=mid-1;
-				ans=arr[mid];
+				ans= arr[mid];
 			}
 		}
 		return ans;
